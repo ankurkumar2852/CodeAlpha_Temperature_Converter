@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="form-group">
+      <label>Celsius:</label>
+      <input type="number" id="celsiusInput" placeholder="Enter temperature in Celsius" oninput="convertTemperature('celsius')">
+    </div>
+    <div class="form-group">
+      <label>Fahrenheit:</label>
+      <input type="number" id="fahrenheitInput" placeholder="Enter temperature in Fahrenheit" oninput="convertTemperature('fahrenheit')">
+    </div>
+    <div class="form-group">
+      <label>Kelvin:</label>
+      <input type="number" id="kelvinInput" placeholder="Enter temperature in Kelvin" oninput="convertTemperature('kelvin')">
+    </div>
+    <div class="form-group">
+      <label>Réaumur:</label>
+      <input type="number" id="reaumurInput" placeholder="Enter temperature in Réaumur" oninput="convertTemperature('reaumur')">
+    </div>
+    <div class="form-group">
+      <label>Rankine:</label>
+      <input type="number" id="rankineInput" placeholder="Enter temperature in Rankine" oninput="convertTemperature('rankine')">
+    </div>
+    <div class="info-icon">
+      <span class="info" onclick="toggleInfoBox()"><b>info</b></span>
+      <div id="infoBox" class="info-box">
+        <h1>Conversion Formulas</h1>
+        <ul>
+          <li><b>Celsius to Fahrenheit:</b> <code>(°C × 9/5) + 32</code></li>
+          <li><b>Celsius to Kelvin:</b> <code>°C + 273.15</code></li>
+          <li><b>Celsius to Réaumur:</b> <code>°C × 4/5</code></li>
+          <li><b>Celsius to Rankine:</b> <code>(°C + 273.15) × 9/5</code></li>
+          <br>
+          <li><b>Fahrenheit to Celsius:</b> <code>(°F - 32) × 5/9</code></li>
+          <li><b>Fahrenheit to Kelvin:</b> <code>(°F - 32) × 5/9 + 273.15</code></li>
+          <li><b>Fahrenheit to Réaumur:</b> <code>(°F - 32) × 4/9</code></li>
+          <li><b>Fahrenheit to Rankine:</b> <code>°F + 459.67</code></li>
+          <br>
+          <li><b>Kelvin to Celsius:</b> <code>K - 273.15</code></li>
+          <li><b>Kelvin to Fahrenheit:</b> <code>(K - 273.15) × 9/5 + 32</code></li>
+          <li><b>Kelvin to Réaumur:</b> <code>(K - 273.15) × 4/5</code></li>
+          <li><b>Kelvin to Rankine:</b> <code>K × 9/5</code></li>
+          <br>
+          <li><b>Réaumur to Celsius:</b> <code>R × 5/4</code></li>
+          <li><b>Réaumur to Fahrenheit:</b> <code>(R × 9/4) + 32</code></li>
+          <li><b>Réaumur to Kelvin:</b> <code>(R × 5/4) + 273.15</code></li>
+          <li><b>Réaumur to Rankine:</b> <code>(R × 9/4) + 491.67</code></li>
+          <br>
+          <li><b>Rankine to Celsius:</b> <code>(Ra - 491.67) × 5/9</code></li>
+          <li><b>Rankine to Fahrenheit:</b> <code>Ra - 459.67</code></li>
+          <li><b>Rankine to Kelvin:</b> <code>Ra × 5/9</code></li>
+          <li><b>Rankine to Réaumur:</b> <code>(Ra - 491.67) × 4/9</code></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
